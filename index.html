@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/style.css"/>
+</head>
+
+<body>
+    <main class="container">
+        <div class="Start Interface" id="startInt">
+        <div class="row">
+            <button type="button" class="btn btn-primary col-sm-2">View Highscores</button>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">Timer</div>
+        </div>
+        <div class="row">
+            <h4>When you click start, you will be presented with a series of questions and be bound to a timer. If you get a question wrong, you will lose time. If you want to view high scores, click the "View Highscores" button. Good luck!</h4>
+        </div>
+        <div class="row">
+            <button class="btn btn-primary col-sm-2" id="start">Start</button>
+        </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="Quiz Interface hidden" id="quizInt">
+        <div class="row">
+            <button type="button" class="btn btn-primary col-sm-2">View Highscores</button>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2" id="count">Timer</div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <h5 id="quest">The questions for the user are going to go right here.</h5>
+        </div>
+        <br>
+        <div class="row">
+            <button type="button" class="btn btn-secondary correct-answer" id="ans0" data-index="0">Question 1</button>
+        </div>
+        <br>
+        <div class="row">
+            <button type="button" class="btn btn-secondary" id="ans1" data-index="1">Question 2</button>
+        </div>
+        <br>
+        <div class="row">
+            <button type="button" class="btn btn-secondary" id="ans2" data-index="2">Question 3</button>
+        </div>
+        <br>
+        <div class="row">
+            <button type="button" class="btn btn-secondary" id="ans3" data-index="3">Question 4</button>
+        </div>
+        </div>
+
+
+        <div class="End Interface hidden" id="endInt">
+            <div class="row">
+                <button type="button" class="btn btn-primary col-sm-2">View Highscores</button>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-2">Timer</div>
+            </div>
+            <div class="row">
+                <h4>The game is now over!</h4>
+            </div>
+            <div class="row">
+
+                <button class="btn btn-primary col-sm-2" id="play">Play Again</button>
+
+            <div class="col-sm-3"></div>
+
+                <button class="btn btn-primary col-sm-2" id="saveScore">Save Score</button>
+
+            </div>
+    </main>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./Assets/script.js"></script>
+</body>
+
+</html>

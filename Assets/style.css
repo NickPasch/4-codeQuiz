@@ -1,0 +1,13 @@
+p{
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+    margin-top: 100px; 
+}
+
+.hidden{
+    display:none;
+}
+
