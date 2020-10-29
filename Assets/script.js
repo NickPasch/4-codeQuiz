@@ -9,6 +9,8 @@ var but2 = document.querySelector("#ans2")
 var but3 = document.querySelector("#ans3")
 var quest = document.querySelector("#quest")
 
+var count = 40;
+
 var questions = [
     {
         question: "What goes at the end of every javascript statement?",
@@ -70,7 +72,7 @@ function startGame(){
     console.log("started")
     theQuiz.setAttribute("class", "Quiz Interface")
     theStart.setAttribute("class", "Start Interface hidden")
-    var count = 40;
+
     var interval = setInterval(function(){
         document.getElementById('count').textContent = count;
         count--;
@@ -108,15 +110,19 @@ document.addEventListener("click", function(event){
         console.log(currentQuestion);
         nextQuestion();   
     }
-})
+    if(event.target.textContent !== answer){
+        count = count - 5;
 
-document.addEventListener("click", function(event){
-    var notAnswer = questions[currentQuestion].answer
-    if(event.target.textContent !== notAnswer){
-        document.getElementById('count').textContent = count - 5;
-        console.log("wrong")
     }
 })
+
+// document.addEventListener("click", function(event){
+//     var notAnswer = questions[currentQuestion].answer
+//     if(event.target.textContent !== notAnswer){
+//         count = count - 5;
+
+//     }
+// })
 
 
 function shuffle(array) {
