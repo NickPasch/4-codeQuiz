@@ -10,74 +10,80 @@
 
 <body>
     <main class="container">
+        <!-- This is the start interface html. -->
         <div class="Start Interface" id="startInt">
-        <div class="row">
-            <button type="button" class="btn btn-primary col-sm-2">View Highscores</button>
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">Timer</div>
-        </div>
-        <div class="row">
-            <h4>When you click start, you will be presented with a series of questions and be bound to a timer. If you get a question wrong, you will lose time. If you want to view high scores, click the "View Highscores" button. Good luck!</h4>
-        </div>
-        <div class="row">
-            <button class="btn btn-primary col-sm-2" id="start">Start</button>
-        </div>
-        </div>
-
-
-
-
-
-
-
-        <div class="Quiz Interface hidden" id="quizInt">
-        <div class="row">
-            <button type="button" class="btn btn-primary col-sm-2">View Highscores</button>
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2" id="count">Timer</div>
-        </div>
-        <br>
-        <br>
-        <div class="row">
-            <h5 id="quest">The questions for the user are going to go right here.</h5>
-        </div>
-        <br>
-        <div class="row">
-            <button type="button" class="btn btn-secondary correct-answer" id="ans0" data-index="0">Question 1</button>
-        </div>
-        <br>
-        <div class="row">
-            <button type="button" class="btn btn-secondary" id="ans1" data-index="1">Question 2</button>
-        </div>
-        <br>
-        <div class="row">
-            <button type="button" class="btn btn-secondary" id="ans2" data-index="2">Question 3</button>
-        </div>
-        <br>
-        <div class="row">
-            <button type="button" class="btn btn-secondary" id="ans3" data-index="3">Question 4</button>
-        </div>
-        </div>
-
-
-        <div class="End Interface hidden" id="endInt">
             <div class="row">
                 <button type="button" class="btn btn-primary col-sm-2">View Highscores</button>
                 <div class="col-sm-3"></div>
                 <div class="col-sm-2">Timer</div>
             </div>
             <div class="row">
-                <h4>The game is now over!</h4>
+                <h4>When you click start, you will be presented with a series of questions. If you get a question wrong, you will lose time. If you want to view high scores, click the "View Highscores" button. Good luck!</h4>
             </div>
             <div class="row">
-
-                <button class="btn btn-primary col-sm-2" id="play">Play Again</button>
-
-            <div class="col-sm-3"></div>
-
-                <button class="btn btn-primary col-sm-2" id="saveScore">Save Score</button>
-
+                <button class="btn btn-primary col-sm-2" id="start">Start</button>
             </div>
+        </div>
+
+        <div class="Quiz Interface hidden" id="quizInt">
+            <div class="row">
+                <button type="button" class="btn btn-primary col-sm-2">View Highscores</button>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-2" id="count">Timer</div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <h5 id="quest">The questions for the user are going to go right here.</h5>
+            </div>
+            <br>
+            <div class="row">
+                <button type="button" class="btn btn-secondary correct-answer" id="ans0" data-index="0">Question 1</button>
+            </div>
+            <br>
+            <div class="row">
+                <button type="button" class="btn btn-secondary" id="ans1" data-index="1">Question 2</button>
+            </div>
+            <br>
+            <div class="row">
+                <button type="button" class="btn btn-secondary" id="ans2" data-index="2">Question 3</button>
+            </div>
+            <br>
+            <div class="row">
+                <button type="button" class="btn btn-secondary" id="ans3" data-index="3">Question 4</button>
+            </div>
+        </div>
+
+        <div class="End Interface hidden" id="endInt">
+            <div class="row">
+                <button type="button" class="btn btn-primary col-sm-2">View Highscores</button>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                    <h4>The game is now over! &nbsp;</h4>
+                    <h4 id="score"></h4>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col-sm-2" id="play">Play Again</button>
+                <div class="col-sm-3">
+                <input type="text" class="form-control" id="initials" placeholder="Initials" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <button class="btn btn-primary col-sm-2" id="saveScore">Save Score</button>
+            </div>
+        </div>
+        
+        <div class="View Score hidden" id="viewInt">
+            <div class="row">
+                <h2>Scoreboard</h2>
+            </div>
+            <div class="row">
+                <ul id="scoreboard">
+                </ul>
+            </div>
+        </div>
+
+
     </main>
 
 
