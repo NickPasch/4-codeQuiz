@@ -13,7 +13,7 @@
         <!-- This is the start interface html. -->
         <div class="Start Interface" id="startInt">
             <div class="row">
-                <button type="button" class="btn btn-primary col-sm-2">View Highscores</button>
+                <button type="button" class="btn btn-primary col-sm-2" id="high1">View Highscores</button>
                 <div class="col-sm-3"></div>
                 <div class="col-sm-2">Timer</div>
             </div>
@@ -24,10 +24,9 @@
                 <button class="btn btn-primary col-sm-2" id="start">Start</button>
             </div>
         </div>
-
+        <!-- This is the quiz interface html. -->
         <div class="Quiz Interface hidden" id="quizInt">
             <div class="row">
-                <button type="button" class="btn btn-primary col-sm-2">View Highscores</button>
                 <div class="col-sm-3"></div>
                 <div class="col-sm-2" id="count">Timer</div>
             </div>
@@ -53,10 +52,10 @@
                 <button type="button" class="btn btn-secondary" id="ans3" data-index="3">Question 4</button>
             </div>
         </div>
-
+        <!-- This is the end interface html. -->
         <div class="End Interface hidden" id="endInt">
             <div class="row">
-                <button type="button" class="btn btn-primary col-sm-2">View Highscores</button>
+                <button type="button" class="btn btn-primary col-sm-2" id="high3">View Highscores</button>
                 <div class="col-sm-3"></div>
             </div>
             <div class="row">
@@ -65,14 +64,14 @@
                     <h4 id="score"></h4>
             </div>
             <div class="row">
-                <button class="btn btn-primary col-sm-2" id="play">Play Again</button>
+                <button class="btn btn-primary col-sm-2" id="homePage">Home Page</button>
                 <div class="col-sm-3">
                 <input type="text" class="form-control" id="initials" placeholder="Initials" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
                 <button class="btn btn-primary col-sm-2" id="saveScore">Save Score</button>
             </div>
         </div>
-        
+        <!-- This is the scoreboard interface html. -->
         <div class="View Score hidden" id="viewInt">
             <div class="row">
                 <h2>Scoreboard</h2>
@@ -80,6 +79,9 @@
             <div class="row">
                 <ul id="scoreboard">
                 </ul>
+            </div>
+            <div>
+                <button class="btn btn-primary col-sm-2" id="homePage2">Home Page</button>
             </div>
         </div>
 
